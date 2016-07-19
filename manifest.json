@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	
+	"name": "Priest is Daed",
+	"description": "Replaces the text 'priest' with 'daed class.'",
+	"version": "1.0",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
